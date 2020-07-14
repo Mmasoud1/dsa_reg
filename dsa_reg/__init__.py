@@ -17,13 +17,13 @@ GOOD_MATCH_PERCENT = 0.15
 
 def alignImages(im1, im2, im1colored,  enhanceFlag):
   """
-  This follows OpenCV example...https://www.learnopencv.com/image-alignment-feature-based-using-opencv-c-python/ 
+  This is based on  OpenCV libraries and functions for ORB features. 
   """
   """
-  :param im1: ref image
-  :param im2: target image
+  :param im1: target image
+  :param im2: ref image 
   :param enhanceFlag: boolean (0,1)  
-  :return: homography metrix and registered image
+  :return: homography metrix, registered image and image size
   """ 
 
   # Convert images to grayscale
@@ -83,9 +83,9 @@ def itemRegistration(refURL, targetURL, xBaseUrl, xAuthentication, xEnhancement)
   :param refURL (string): ref image URL 
   :param targetURL (string): target image URL
   :param xBaseUrl (string): DSA Server URL e.g. https://styx.neurology.emory.edu/girder/api/v1
-  :param xAuthentication: boolen (0,1)  
-  :param xEnhancement: boolen (0,1)  
-  :return (Dict): homography metrix, psnr, thumb width and height
+  :param xAuthentication: boolean (0,1)  
+  :param xEnhancement: boolean (0,1)  
+  :return (Dict): homography metrix, psnr, thumb width and height, x offset, y offset, scale x, scale y
   """ 
   if(xAuthentication):
     xDSA_User = raw_input("Login name :")
