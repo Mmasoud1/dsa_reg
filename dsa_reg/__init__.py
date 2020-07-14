@@ -22,8 +22,8 @@ def alignImages(im1, im2, im1colored,  enhanceFlag):
   """
   :param im1: ref image
   :param im2: target image
-  :param enhanceFlag: boolen (0,1)  
-  :return: homography metrix and registered imaage
+  :param enhanceFlag: boolean (0,1)  
+  :return: homography metrix and registered image
   """ 
 
   # Convert images to grayscale
@@ -78,9 +78,7 @@ def alignImages(im1, im2, im1colored,  enhanceFlag):
 
 
 def itemRegistration(refURL, targetURL, xBaseUrl, xAuthentication, xEnhancement):
-  """
-  This follows OpenCV example...https://www.learnopencv.com/image-alignment-feature-based-using-opencv-c-python/ 
-  """
+
   """
   :param refURL (string): ref image URL 
   :param targetURL (string): target image URL
