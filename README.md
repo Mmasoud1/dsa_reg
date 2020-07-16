@@ -7,7 +7,7 @@ This package approximately computes the offsets needed to register DSA (Digital 
 ## Installations
 __Through pypi package__
 ``` Shell
-$ pip install dsa_reg
+$ pip install dsa-reg
 ```
 
 __From Source__
